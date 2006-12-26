@@ -1,3 +1,6 @@
+# TODO
+# - use system fonts
+#
 %define	_alpha	alpha
 Summary:	3D chess game for X-Window
 Summary(pl):	Trójwymiarowe szachy dla X-Window
@@ -32,6 +35,7 @@ i kilka ró¿nych poziomów sztucznej inteligencji.
 %{__sed} -i 's@../art@%{_datadir}/brutalchess/art@' src/{basicset.cpp,gamecore.cpp,granitetheme.cpp}
 %{__sed} -i 's@../fonts@%{_datadir}/brutalchess/fonts@' src/gamecore.cpp
 %{__sed} -i 's@../models@%{_datadir}/brutalchess/models@' src/{basicset.cpp,gamecore.cpp}
+rm -f models/.cvsignore
 
 %build
 %{__aclocal}
