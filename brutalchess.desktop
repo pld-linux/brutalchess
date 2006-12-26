@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Brutalchess
+Comment=3D X-Window chess game
+Comment[pl]=Trójwymiarowe szachy dla X-Window
+Exec=brutalchess
+Icon=brutalchess.xpm
+Terminal=false
+Type=Application
+Categories=Game;BoardGame;
+Encoding=UTF-8
+# vi: encoding=utf-8
