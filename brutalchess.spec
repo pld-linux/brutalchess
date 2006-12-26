@@ -15,7 +15,7 @@ BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	freetype
+BuildRequires:	freetype-devel
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
