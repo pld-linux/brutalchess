@@ -3,7 +3,7 @@
 #
 %define	_alpha	alpha
 Summary:	3D chess game for X-Window
-Summary(pl.UTF-8):   Trójwymiarowe szachy dla X-Window
+Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		brutalchess
 Version:	0.5
 Release:	1
