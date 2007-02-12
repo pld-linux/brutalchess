@@ -3,7 +3,7 @@
 #
 %define	_alpha	alpha
 Summary:	3D chess game for X-Window
-Summary(pl):	Tr骿wymiarowe szachy dla X-Window
+Summary(pl.UTF-8):   Tr贸jwymiarowe szachy dla X-Window
 Name:		brutalchess
 Version:	0.5.2
 Release:	0.%{_alpha}.1
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Brutal Chess features full 3D graphics, an advanced engine, and
 several different levels of intelligent AI.
 
-%description -l pl
-Brutal Chess cechuje pe硁a tr骿wymiarowa grafika, zaawansowany silnik
-i kilka r罂nych poziom體 sztucznej inteligencji.
+%description -l pl.UTF-8
+Brutal Chess cechuje pe艂na tr贸jwymiarowa grafika, zaawansowany silnik
+i kilka r贸偶nych poziom贸w sztucznej inteligencji.
 
 %prep
 %setup -q
