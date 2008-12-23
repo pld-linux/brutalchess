@@ -14,7 +14,7 @@ Source0:	http://dl.sourceforge.net/brutalchess/%{name}-%{_alpha}-%{version}-src.
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
 Patch0:		%{name}-GLvoid.patch
-URL:		http://brutalchess.sourceforge.net/
+URL:		http://sourceforge.net/projects/brutalchess/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
 BuildRequires:	autoconf
