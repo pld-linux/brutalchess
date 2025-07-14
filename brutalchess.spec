@@ -35,7 +35,7 @@ i kilka różnych poziomów sztucznej inteligencji.
 
 %prep
 %setup -q
-%patch0 -p0
+%patch -P0 -p0
 %{__sed} -i 's@../art@%{_datadir}/brutalchess/art@' src/{basicset.cpp,gamecore.cpp,granitetheme.cpp}
 %{__sed} -i 's@../fonts@%{_datadir}/brutalchess/fonts@' src/gamecore.cpp
 %{__sed} -i 's@../models@%{_datadir}/brutalchess/models@' src/{basicset.cpp,gamecore.cpp}
