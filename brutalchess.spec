@@ -6,7 +6,7 @@ Summary:	3D chess game for X-Window
 Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		brutalchess
 Version:	0.5.2
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/brutalchess/%{name}-%{_alpha}-%{version}-src.tar.gz
