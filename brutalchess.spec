@@ -6,7 +6,7 @@ Summary:	3D chess game for X-Window
 Summary(pl.UTF-8):	Trójwymiarowe szachy dla X-Window
 Name:		brutalchess
 Version:	0.5.2
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/brutalchess/%{name}-%{_alpha}-%{version}-src.tar.gz
@@ -14,6 +14,7 @@ Source0:	http://dl.sourceforge.net/brutalchess/%{name}-%{_alpha}-%{version}-src.
 Source1:	%{name}.desktop
 Source2:	%{name}.xpm
 Patch0:		%{name}-GLvoid.patch
+Patch1:		%{name}-includes.patch
 URL:		http://sourceforge.net/projects/brutalchess/
 BuildRequires:	SDL-devel
 BuildRequires:	SDL_image-devel
@@ -36,6 +37,7 @@ i kilka różnych poziomów sztucznej inteligencji.
 %prep
 %setup -q
 %patch -P0 -p0
+%patch -P1 -p0
 %{__sed} -i 's@../art@%{_datadir}/brutalchess/art@' src/{basicset.cpp,gamecore.cpp,granitetheme.cpp}
 %{__sed} -i 's@../fonts@%{_datadir}/brutalchess/fonts@' src/gamecore.cpp
 %{__sed} -i 's@../models@%{_datadir}/brutalchess/models@' src/{basicset.cpp,gamecore.cpp}
@@ -72,8 +74,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/md3view
-%attr(755,root,root) %{_libdir}/objview
+%attr(755,root,root) %{_libexecdir}/md3view
+%attr(755,root,root) %{_libexecdir}/objview
 %{_datadir}/%{name}
 %{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/%{name}.xpm

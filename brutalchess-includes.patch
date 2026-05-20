@@ -1,0 +1,30 @@
+--- src/xboardplayer.cpp.orig
++++ src/xboardplayer.cpp
+@@ -14,6 +14,7 @@
+ #include <cassert>
+ #include <sstream>
+ #include <string>
++#include <unistd.h>
+ 
+ using namespace std;
+ 
+--- src/faileplayer.cpp.orig
++++ src/faileplayer.cpp
+@@ -14,6 +14,7 @@
+ #include <cassert>
+ #include <sstream>
+ #include <string>
++#include <unistd.h>
+ 
+ using namespace std;
+ 
+--- src/brutalplayer.cpp.orig
++++ src/brutalplayer.cpp
+@@ -12,6 +12,7 @@
+ 
+ #include <vector>
+ #include <time.h>
++#include <climits>
+ 
+ using namespace std;
+ 
